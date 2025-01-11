@@ -1,0 +1,57 @@
+/* 基础样式 */
+.App {
+  background-color: #137495;
+  overflow-y: scroll; /* 保持滚动功能 */
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+/* 隐藏滚动条 */
+.App::-webkit-scrollbar {
+  display: none;
+}
+
+.App {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* 确保内容居中并响应屏幕大小 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* 响应式字体大小和间距 */
+@media screen and (max-width: 1024px) {
+  .App {
+    background-color: #0f5c75; /* 更暗背景色以区分 */
+  }
+
+  .container {
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    background-color: #0c4559;
+  }
+
+  .container {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .App {
+    background-color: #08303e;
+  }
+
+  .container {
+    padding: 4px;
+  }
+}

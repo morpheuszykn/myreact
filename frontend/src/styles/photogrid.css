@@ -1,0 +1,22 @@
+
+.photogrid{
+    
+    height:100vh;
+    width:100%;
+    
+  
+}
+
+
+@media screen and (max-width: 500px) {
+    .photogrid {
+      flex-direction: column;
+      height: 120vh; /* 根据需求微调 */
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .photogrid {
+      flex-direction: row;
+    }
+  }
